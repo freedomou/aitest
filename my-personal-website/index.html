@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人介绍网站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#contact">联系方式</a></li>
+        <li><a href="#chat">聊天</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carousel" class="section">
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="Slide 1" class="carousel-image">
+          <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="Slide 2" class="carousel-image">
+          <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="Slide 3" class="carousel-image">
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h1>你好，我是张三</h1>
+      <p>一名前端开发工程师，热爱编程和技术。</p>
+      <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="张三" class="avatar">
+      <p>我住在美丽的城市，喜欢阅读、旅行和编程。我在前端开发领域有多年的经验，擅长使用各种现代技术和框架。</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>技能</h2>
+      <ul class="skills-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Vue.js</li>
+        <li>Node.js</li>
+        <li>Git</li>
+        <li>Webpack</li>
+        <li>Bootstrap</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>项目</h2>
+      <div class="project">
+        <h3>项目1 - 在线商城</h3>
+        <p>这是一个基于 React 和 Redux 的在线商城项目，实现了商品浏览、购物车管理等功能。</p>
+        <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="项目1" class="project-image">
+      </div>
+      <div class="project">
+        <h3>项目2 - 个人博客</h3>
+        <p>这是一个基于 Vue.js 和 Firebase 的个人博客项目，支持文章发布、评论等功能。</p>
+        <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="项目2" class="project-image">
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section">
+    <div class="container">
+      <h2>博客</h2>
+      <div class="blog-post">
+        <h3>如何学习前端开发</h3>
+        <p>在这篇文章中，我分享了一些关于如何高效学习前端开发的技巧和资源。</p>
+        <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="前端开发" class="blog-image">
+        <a href="#" class="read-more">阅读更多</a>
+      </div>
+      <div class="blog-post">
+        <h3>React 高级用法</h3>
+        <p>这篇文章介绍了 React 中的一些高级用法，如 Higher-Order Components 和 Render Props。</p>
+        <img src="https://img95.699pic.com/photo/50057/9423.jpg_wh860.jpg" alt="React" class="blog-image">
+        <a href="#" class="read-more">阅读更多</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>联系方式</h2>
+      <p>邮箱：example@example.com</p>
+      <p>电话：123-456-7890</p>
+      <p>LinkedIn：<a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></p>
+      <p>GitHub：<a href="https://github.com/your-profile" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <section id="chat" class="section">
+    <div class="container">
+      <h2>聊天</h2>
+      <div class="chat-container">
+        <div class="chat-messages" id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="输入消息..." onkeypress="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">发送</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 张三. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
